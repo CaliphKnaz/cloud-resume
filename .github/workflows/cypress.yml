@@ -12,6 +12,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          project: ./Testing\cypress
+          project: ./Testing
           browser: chrome
           wait-on: "http://localhost:3000"
