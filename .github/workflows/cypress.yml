@@ -12,7 +12,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          project: ./Testing
+          project: ./Testing/cypress/e2e
           browser: chrome
           build: yarn build
           start: yarn start
