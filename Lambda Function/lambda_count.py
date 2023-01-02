@@ -13,8 +13,8 @@ def lambda_handler(event,context):
 	response2 = table.get_item(Key={'count': 0})
 	item = response2['Item']['rate']
 	if item < 1000000000:
-	    item += 1
-        print(item)
+		item += 1
+		print(item)
     
 	#inserting values into table
 	response = table.update_item(
