@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "resume-bucket" {
 
 resource "aws_s3_bucket_policy" "allow_global_access" {
   bucket = aws_s3_bucket.resume-bucket.id
-  policy = file("public-bucket.json")
+  policy = file("/public-bucket.json")
 
 }
 
